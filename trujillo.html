@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trujillo, Perú</title>
+  <meta name="description" content="Guía sobre Trujillo, Perú: la ciudad de la eterna primavera, sus casonas coloniales, Chan Chan, la marinera y su gastronomía.">
+  <style>
+    :root {
+      --ochre: #d99a1e;
+      --terracotta: #b5482a;
+      --wine: #6e2a24;
+      --cream: #fbf3e0;
+      --paper: #ffffff;
+      --ink: #2a1f1b;
+      --teal: #1f6f6b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.65;
+    }
+    a { color: var(--terracotta); }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+
+    nav { position: sticky; top: 0; z-index: 10; background: var(--wine); }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; padding-top: 8px; padding-bottom: 8px; }
+    nav strong { color: #fff; margin-right: auto; letter-spacing: .04em; }
+    nav a { color: #f6e6c8; text-decoration: none; padding: 6px 10px; border-radius: 6px; font-size: .95rem; }
+    nav a:hover { background: rgba(255,255,255,.15); }
+
+    header.hero {
+      background: linear-gradient(135deg, var(--terracotta) 0%, var(--ochre) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 72px 16px 56px;
+    }
+    .hero h1 { font-size: clamp(2.4rem, 8vw, 4.5rem); margin: 0; text-shadow: 0 2px 12px rgba(0,0,0,.25); }
+    .hero p { font-size: clamp(1.05rem, 2.6vw, 1.4rem); max-width: 660px; margin: 12px auto 0; }
+    .stripe { height: 10px; background: repeating-linear-gradient(90deg, var(--wine) 0 24px, var(--ochre) 24px 48px, var(--teal) 48px 72px); }
+
+    section { padding: 48px 0 8px; }
+    h2 { color: var(--wine); font-size: 1.8rem; margin: 0 0 8px; }
+    h2::after { content: ""; display: block; width: 56px; height: 4px; background: var(--ochre); border-radius: 2px; margin-top: 8px; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 20px; }
+    .card { background: var(--paper); border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,.08); border-top: 5px solid var(--terracotta); }
+    .card h3 { margin: 0 0 6px; color: var(--wine); }
+    .card p { margin: 0; }
+
+    .facts { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin-top: 20px; }
+    .fact { background: var(--wine); color: #fff; border-radius: 12px; padding: 16px; text-align: center; }
+    .fact b { display: block; font-size: 1.4rem; color: #ffd98a; }
+
+    .timeline { list-style: none; margin: 20px 0 0; padding: 0 0 0 20px; border-left: 4px solid var(--ochre); }
+    .timeline li { position: relative; margin-bottom: 16px; padding-left: 16px; }
+    .timeline li::before { content: ""; position: absolute; left: -30px; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--terracotta); border: 3px solid var(--cream); }
+    .timeline b { color: var(--terracotta); }
+
+    .dishes { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .dishes li { background: #f1dfb3; border-left: 5px solid var(--teal); border-radius: 8px; padding: 12px 14px; }
+
+    details { background: var(--paper); border-radius: 10px; padding: 12px 16px; margin-top: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    summary { cursor: pointer; font-weight: 600; color: var(--wine); }
+
+    footer { margin-top: 56px; background: var(--wine); color: #f0dcc0; text-align: center; padding: 28px 16px; font-size: .9rem; }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <strong>TRUJILLO</strong>
+      <a href="#historia">Historia</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#comida">Comida</a>
+      <a href="#visita">Visita</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Trujillo</h1>
+    <p>La “Ciudad de la Eterna Primavera”, capital de la región La Libertad, en la costa norte del Perú.</p>
+  </header>
+  <div class="stripe"></div>
+
+  <main class="wrap">
+    <section>
+      <div class="facts">
+        <div class="fact"><b>1534</b>Fundación española</div>
+        <div class="fact"><b>La Libertad</b>Región</div>
+        <div class="fact"><b>Costa norte</b>Océano Pacífico</div>
+        <div class="fact"><b>UNESCO</b>Chan Chan, 1986</div>
+      </div>
+    </section>
+
+    <section id="historia">
+      <h2>Historia</h2>
+      <p>
+        El valle de Moche fue cuna de dos grandes culturas: los <strong>moche</strong>, que levantaron las Huacas del Sol y de
+        la Luna, y los <strong>chimú</strong>, cuya capital fue Chan Chan. Siglos después, los españoles fundaron aquí
+        una ciudad que recibió el nombre de la localidad extremeña de Trujillo, de donde era originario Francisco Pizarro.
+      </p>
+      <ul class="timeline">
+        <li><b>Época prehispánica</b><br>Se desarrollan las culturas moche y chimú en la costa norte.</li>
+        <li><b>1534</b><br>Fundación de la ciudad por los españoles.</li>
+        <li><b>1820</b><br>Trujillo proclama su independencia de España, el 29 de diciembre.</li>
+        <li><b>1986</b><br>Chan Chan es declarada Patrimonio de la Humanidad por la UNESCO.</li>
+      </ul>
+    </section>
+
+    <section id="lugares">
+      <h2>Lugares imperdibles</h2>
+      <div class="grid">
+        <div class="card"><h3>Plaza de Armas</h3><p>Corazón del centro histórico, con la catedral, el monumento a la Libertad y casonas de colores a su alrededor.</p></div>
+        <div class="card"><h3>Casonas coloniales</h3><p>Fachadas con balcones y rejas de hierro, y patios interiores que se pueden visitar en el centro.</p></div>
+        <div class="card"><h3>Chan Chan</h3><p>La mayor ciudad de adobe de América, con muros decorados con relieves de peces, aves y figuras geométricas.</p></div>
+        <div class="card"><h3>Huacas del Sol y de la Luna</h3><p>Templos moche con coloridos murales que se conservan en el interior de la Huaca de la Luna.</p></div>
+        <div class="card"><h3>Huaca Arco Iris</h3><p>Templo chimú decorado con relieves del arco iris, cerca de Chan Chan.</p></div>
+        <div class="card"><h3>Huanchaco</h3><p>Balneario con caballitos de totora y buenas olas para el surf. <a href="huanchaco.html">Ver la página de Huanchaco</a>.</p></div>
+      </div>
+    </section>
+
+    <section id="cultura">
+      <h2>Cultura y fiestas</h2>
+      <p>
+        Trujillo es conocida por la <strong>marinera norteña</strong>, un baile de pareja con pañuelo que se celebra cada año
+        en el Concurso Nacional de Marinera, a comienzos del año. Otra cita importante es el
+        <strong>Festival Internacional de la Primavera</strong>, con desfiles de carros alegóricos y reinas, a fines de septiembre
+        o inicios de octubre. En la región también se admira al caballo peruano de paso, que se exhibe en concursos y exhibiciones.
+      </p>
+    </section>
+
+    <section id="comida">
+      <h2>Gastronomía</h2>
+      <p>La cocina norteña mezcla productos del mar y del campo. Algunos platos para probar:</p>
+      <ul class="dishes">
+        <li><strong>Ceviche</strong><br>Pescado fresco marinado en limón, con ají y camote.</li>
+        <li><strong>Cabrito norteño</strong><br>Guiso de cabrito con frejoles y arroz.</li>
+        <li><strong>Shambar</strong><br>Sopa espesa de trigo y legumbres con carnes, típica de Trujillo.</li>
+        <li><strong>Sopa teóloga</strong><br>Sopa tradicional con pan, pollo y especias.</li>
+      </ul>
+    </section>
+
+    <section id="visita">
+      <h2>Cómo visitar</h2>
+      <details open>
+        <summary>Cuándo ir</summary>
+        <p>El clima es templado casi todo el año y con poca lluvia. El verano (diciembre a abril) es el más cálido y soleado.</p>
+      </details>
+      <details>
+        <summary>Cómo llegar</summary>
+        <p>Hay vuelos desde Lima y buses interprovinciales que recorren la Panamericana Norte. La ciudad cuenta con aeropuerto propio.</p>
+      </details>
+      <details>
+        <summary>Cómo moverse</summary>
+        <p>El centro histórico se recorre a pie. Para ir a Chan Chan, Huanchaco o las Huacas se usan buses, combis o taxis.</p>
+      </details>
+      <details>
+        <summary>Consejos</summary>
+        <p>Lleva ropa ligera, protector solar y agua. Para las huacas conviene salir temprano, antes de que el sol sea fuerte.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    Página de prueba sobre Trujillo, Perú · <a href="huanchaco.html">Huanchaco</a> · <a href="index.html">Volver al inicio</a>
+  </footer>
+</body>
+</html>

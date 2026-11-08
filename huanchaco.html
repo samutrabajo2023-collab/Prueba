@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huanchaco, Trujillo</title>
+  <meta name="description" content="Guía sobre Huanchaco: caballitos de totora, surf, gastronomía e historia en la costa de Trujillo, Perú.">
+  <style>
+    :root {
+      --sea: #0b4f6c;
+      --sea-light: #1d8fb3;
+      --sand: #f4e8d0;
+      --sand-dark: #e3cfa6;
+      --ink: #1b2a33;
+      --accent: #e0742f;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--sand);
+      line-height: 1.65;
+    }
+    a { color: var(--sea); }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11, 79, 108, .95);
+      backdrop-filter: blur(6px);
+    }
+    nav .wrap { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; padding-top: 8px; padding-bottom: 8px; }
+    nav strong { color: #fff; margin-right: auto; letter-spacing: .04em; }
+    nav a { color: #e8f4f8; text-decoration: none; padding: 6px 10px; border-radius: 6px; font-size: .95rem; }
+    nav a:hover { background: rgba(255,255,255,.15); }
+
+    header.hero {
+      background: linear-gradient(180deg, #8fd3e8 0%, var(--sea-light) 55%, var(--sea) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 72px 16px 0;
+      overflow: hidden;
+    }
+    .hero h1 { font-size: clamp(2.4rem, 8vw, 4.5rem); margin: 0; letter-spacing: .02em; text-shadow: 0 2px 12px rgba(0,0,0,.25); }
+    .hero p { font-size: clamp(1.05rem, 2.6vw, 1.4rem); max-width: 640px; margin: 12px auto 0; }
+    .hero svg { display: block; width: 100%; height: auto; margin-top: 24px; }
+
+    section { padding: 48px 0 8px; }
+    h2 { color: var(--sea); font-size: 1.8rem; margin: 0 0 8px; }
+    h2::after { content: ""; display: block; width: 56px; height: 4px; background: var(--accent); border-radius: 2px; margin-top: 8px; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 20px; }
+    .card { background: var(--card); border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    .card h3 { margin: 0 0 6px; color: var(--sea); }
+    .card p { margin: 0; }
+
+    .facts { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin-top: 20px; }
+    .fact { background: var(--sea); color: #fff; border-radius: 12px; padding: 16px; text-align: center; }
+    .fact b { display: block; font-size: 1.5rem; color: #ffd9b8; }
+
+    .dishes { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .dishes li { background: var(--sand-dark); border-left: 5px solid var(--accent); border-radius: 8px; padding: 12px 14px; }
+
+    details { background: var(--card); border-radius: 10px; padding: 12px 16px; margin-top: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    summary { cursor: pointer; font-weight: 600; color: var(--sea); }
+
+    footer { margin-top: 56px; background: var(--sea); color: #cfe6ee; text-align: center; padding: 28px 16px; font-size: .9rem; }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <strong>HUANCHACO</strong>
+      <a href="#historia">Historia</a>
+      <a href="#caballitos">Caballitos</a>
+      <a href="#surf">Surf</a>
+      <a href="#comida">Comida</a>
+      <a href="#visita">Visita</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Huanchaco</h1>
+    <p>Balneario y puerto pesquero de Trujillo, en la costa norte del Perú, donde se navega en caballitos de totora desde hace siglos.</p>
+    <svg viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 Q150 10 300 60 T600 60 T900 60 T1200 60 V140 H0Z" fill="#0b4f6c" opacity=".55"/>
+      <path d="M0 85 Q150 35 300 85 T600 85 T900 85 T1200 85 V140 H0Z" fill="#0b4f6c" opacity=".8"/>
+      <path d="M0 110 Q150 70 300 110 T600 110 T900 110 T1200 110 V140 H0Z" fill="#f4e8d0"/>
+    </svg>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <div class="facts">
+        <div class="fact"><b>La Libertad</b>Región</div>
+        <div class="fact"><b>~12 km</b>de Trujillo</div>
+        <div class="fact"><b>2012</b>Reserva Mundial de Surf</div>
+        <div class="fact"><b>Pacífico</b>Costa norte</div>
+      </div>
+    </section>
+
+    <section id="historia">
+      <h2>Historia</h2>
+      <p>
+        Huanchaco es un distrito de la provincia de Trujillo, en la región La Libertad. Su litoral estuvo habitado por pueblos
+        costeños mucho antes de la llegada de los españoles, y está muy cerca de <strong>Chan Chan</strong>, la capital del
+        reino Chimú y una de las mayores ciudades de adobe del mundo, declarada Patrimonio de la Humanidad por la UNESCO.
+      </p>
+      <p>
+        La pesca con embarcaciones de totora forma parte de la identidad local desde la época prehispánica.
+        En lo alto del pueblo se alza la iglesia colonial de la Virgen del Socorro, un mirador natural sobre la bahía.
+      </p>
+    </section>
+
+    <section id="caballitos">
+      <h2>Los caballitos de totora</h2>
+      <p>
+        Son pequeñas embarcaciones hechas con haces de totora, una planta de agua dulce. Los pescadores se arrodillan o se
+        sientan sobre ellos y reman con una caña de bambú partida. Al terminar la jornada los dejan secar parados sobre la
+        arena, una imagen que se ha vuelto el símbolo de Huanchaco.
+      </p>
+      <div class="grid">
+        <div class="card"><h3>Materiales</h3><p>Totora cortada, secada y atada en haces. Hay que renovarlos cada cierto tiempo porque absorben agua.</p></div>
+        <div class="card"><h3>Tradición</h3><p>El oficio se transmite de padres a hijos entre las familias de pescadores del balneario.</p></div>
+        <div class="card"><h3>Para visitantes</h3><p>Es posible ver cómo salen al mar al amanecer y regresan con la pesca del día.</p></div>
+      </div>
+    </section>
+
+    <section id="surf">
+      <h2>Surf</h2>
+      <p>
+        Las olas largas y constantes de Huanchaco lo convierten en un buen lugar para aprender y para surfistas con experiencia.
+        En 2012 fue declarado <strong>Reserva Mundial de Surf</strong>, un reconocimiento que protege sus olas y su entorno.
+        Hay escuelas que alquilan tablas y trajes de neopreno, porque el agua suele estar fresca.
+      </p>
+    </section>
+
+    <section id="comida">
+      <h2>Gastronomía</h2>
+      <p>El mar manda en la mesa. Estos platos son típicos de la zona y de la cocina norteña:</p>
+      <ul class="dishes">
+        <li><strong>Ceviche</strong><br>Pescado fresco marinado en limón, con ají, cebolla y camote.</li>
+        <li><strong>Sudado de pescado</strong><br>Pescado cocido al vapor con tomate, cebolla y ají.</li>
+        <li><strong>Arroz con mariscos</strong><br>Arroz con langostinos, conchas y calamar.</li>
+        <li><strong>Cabrito norteño</strong><br>Guiso de cabrito con frejoles y arroz.</li>
+      </ul>
+    </section>
+
+    <section id="visita">
+      <h2>Cómo visitar</h2>
+      <p>Desde la ciudad de Trujillo se llega en transporte público o taxi en unos 20 a 30 minutos.</p>
+      <details open>
+        <summary>Cuándo ir</summary>
+        <p>El verano (diciembre a abril) es el más soleado y cálido. En invierno hay más nubosidad y el mar está más frío, pero también hay buenas olas.</p>
+      </details>
+      <details>
+        <summary>Qué hacer</summary>
+        <p>Caminar por el malecón y el muelle, ver los caballitos de totora, tomar una clase de surf, subir a la iglesia y comer en los restaurantes frente al mar.</p>
+      </details>
+      <details>
+        <summary>Qué llevar</summary>
+        <p>Protector solar, sombrero, una chaqueta ligera para la tarde y efectivo para compras pequeñas.</p>
+      </details>
+      <details>
+        <summary>Cerca de Huanchaco</summary>
+        <p>Chan Chan, las Huacas del Sol y de la Luna, y el centro histórico de Trujillo.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    Página de prueba sobre Huanchaco, Trujillo (Perú) · <a href="index.html">Volver al inicio</a>
+  </footer>
+</body>
+</html>
